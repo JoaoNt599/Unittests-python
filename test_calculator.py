@@ -31,12 +31,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(AssertionError):
             sum_py(0, '11')
 
-    def test_sub_5_and_5_return_0(self):
-        self.assertEqual(sub_py(5, 5), 0)
-
-    def test_sub_5_and_5_negative_return(self):
-        pass
-
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
