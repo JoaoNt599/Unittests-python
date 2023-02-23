@@ -1,5 +1,20 @@
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../../calculator'
+            )
+        )
+    )
+except:
+    raise
+
 import unittest
-from calculator import sum_py, sub_py
+from calculator import sum_py
 
 
 class TestCalculator(unittest.TestCase):

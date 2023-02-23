@@ -13,9 +13,24 @@ class People
             data_will_be_True_if_successfully-obtained
 """
 
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../../people'
+            )
+        )
+    )
+except:
+    raise
+
 import unittest
 from unittest.mock import patch
-from People import People
+from people import People
 
 
 class TestPeople(unittest.TestCase):
